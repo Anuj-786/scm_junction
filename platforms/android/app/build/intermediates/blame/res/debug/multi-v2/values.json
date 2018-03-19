@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/anuj/work/apps/phonegap_apps/bizConnect/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/home/anuj/work/apps/phonegap_apps/bizConnect/platforms/android/app/src/main/res/values/spinner_plugin_styles.xml",
+                    "from": {
+                        "startLines": "23,11,2",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "1306,589,55",
+                        "endLines": "23,22,10",
+                        "endColumns": "47,12,12",
+                        "endOffsets": "1349,1301,584"
+                    },
+                    "to": {
+                        "startLines": "2,6,18",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,275,992",
+                        "endLines": "2,17,26",
+                        "endColumns": "47,12,12",
+                        "endOffsets": "98,987,1521"
+                    }
+                },
+                {
+                    "source": "/home/anuj/work/apps/phonegap_apps/bizConnect/platforms/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1",
+                        "startColumns": "-1,-1,-1",
+                        "startOffsets": "-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "3,4,5",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "103,167,216",
+                        "endColumns": "63,48,58",
+                        "endOffsets": "162,211,270"
+                    }
+                }
+            ]
+        }
+    ]
+}

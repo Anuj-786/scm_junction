@@ -1,0 +1,16 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "scmjunction",
+  "short_name": "scmjunction",
+  "version": "io.scmjunction.svasth",
+  "author": "Gai Technologies Team",
+  "icons": [
+    {
+      "src": "www/img/logo.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
+  "start_url": "index.html"
+}

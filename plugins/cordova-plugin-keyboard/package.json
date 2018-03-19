@@ -1,0 +1,101 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-keyboard",
+        "scope": null,
+        "escapedName": "cordova-plugin-keyboard",
+        "name": "cordova-plugin-keyboard",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/anuj/work/apps/phonegap_apps/bizConnect"
+    ]
+  ],
+  "_from": "cordova-plugin-keyboard@latest",
+  "_id": "cordova-plugin-keyboard@1.2.0",
+  "_inCache": true,
+  "_location": "/cordova-plugin-keyboard",
+  "_nodeVersion": "6.7.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-keyboard-1.2.0.tgz_1510790620127_0.5471679724287242"
+  },
+  "_npmUser": {
+    "name": "cjpearson",
+    "email": "cjp822@gmail.com"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-keyboard",
+    "scope": null,
+    "escapedName": "cordova-plugin-keyboard",
+    "name": "cordova-plugin-keyboard",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-keyboard/-/cordova-plugin-keyboard-1.2.0.tgz",
+  "_shasum": "8445812643e4763e7beffed39d279f151bb89aeb",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-keyboard",
+  "_where": "/home/anuj/work/apps/phonegap_apps/bizConnect",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/cjpearson/cordova-plugin-keyboard/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-keyboard",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova Keyboard Plugin",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-Zng4SgDQQ2BCqeDOvrsgNlM9tcjnxmJoh0Qhex0KltMsoR0g/ONbMTpaVvI8EhNKVO8HJPnhFxxzHxrCPLQ7sQ==",
+    "shasum": "8445812643e4763e7beffed39d279f151bb89aeb",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-keyboard/-/cordova-plugin-keyboard-1.2.0.tgz"
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.2.0"
+    }
+  ],
+  "gitHead": "7897856fc9df9ae3d017c824e2ba59079aff44bd",
+  "homepage": "https://github.com/cjpearson/cordova-plugin-keyboard#readme",
+  "keywords": [
+    "cordova",
+    "keyboard",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "Apache 2.0",
+  "maintainers": [
+    {
+      "name": "cjpearson",
+      "email": "cjp822@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-keyboard",
+  "optionalDependencies": {},
+  "readme": "# cordova-plugin-keyboard\n\n> This plugin provides the `Keyboard` object which has some functions to customize and control the keyboard. It also supports the __HideKeyboardFormAccessoryBar__ (boolean) and __KeyboardShrinksView__ (boolean) preferences in config.xml.\n\nThis plugin has only been tested in Cordova 3.2 or greater, and its use in previous Cordova versions is not recommended (potential conflict with keyboard customization code present in the core in previous Cordova versions). \n\nIf you do use this plugin in an older Cordova version (again, not recommended), you have to make sure the HideKeyboardFormAccessoryBar and KeyboardShrinksView preference values are *always* false, and only use the API functions to turn things on/off.\n\nThis plugin was based on this Apache [project](https://github.com/apache/cordova-plugins/tree/master/keyboard) and has a compatible API.\n\n- [Installation](#installation)\n- [Methods](#methods)\n    - [Keyboard.shrinkView](#keyboardshrinkview)\n    - [Keyboard.hideFormAccessoryBar](#keyboardhideformaccessorybar)\n    - [Keyboard.disableScrollingInShrinkView](#keyboarddisablescrollinginshrinkview)\n    - [Keyboard.hide](#keyboardhide)\n    - [Keyboard.show](#keyboardshow)\n- [Properties](#properties)\n    - [Keyboard.isVisible](#keyboardisvisible)\n    - [Keyboard.automaticScrollToTopOnHiding](#keyboardautomaticscrolltotoponhiding)\n- [Events](#events)\n    - [keyboardDidShow](#keyboarddidshow)\n    - [keyboardDidHide](#keyboarddidhide)\n    - [keyboardWillShow](#keyboardwillshow)\n    - [keyboardWillHide](#keyboardwillhide)\n    - [keyboardHeightWillChange](#keyboardheightwillchange)\n- [Releases](#releases) \n\n# Installation\n\nFrom [npm](https://www.npmjs.com/package/cordova-plugin-keyboard) (stable)\n\n`cordova plugin add cordova-plugin-keyboard`\n\nFrom github latest (may not be stable)\n\n`cordova plugin add https://github.com/cjpearson/cordova-plugin-keyboard`\n\n# Methods\n\n## Keyboard.shrinkView\n\nShrink the WebView when the keyboard comes up.\n\n    Keyboard.shrinkView(value, successCallback);\n\n#### Description\n\nSet to true to shrink the WebView when the keyboard comes up. The WebView shrinks instead of the viewport shrinking and the page scrollable. This applies to apps that position their elements relative to the bottom of the WebView. This is the default behaviour on Android, and makes a lot of sense when building apps as opposed to webpages.\n\n\n#### Supported Platforms\n\n- iOS\n\n#### Quick Example\n\n    Keyboard.shrinkView(true);\n    Keyboard.shrinkView(false);\n    Keyboard.shrinkView(null, function (currentValue) { console.log(currentValue); });\n\n## Keyboard.hideFormAccessoryBar\n\nHide the keyboard toolbar.\n\n    Keyboard.hideFormAccessoryBar(value, successCallback);\n\n#### Description\n\nSet to true to hide the additional toolbar that is on top of the keyboard. This toolbar features the Prev, Next, and Done buttons.\n\n\n#### Supported Platforms\n\n- iOS\n\n#### Quick Example\n\n    Keyboard.hideFormAccessoryBar(true);\n    Keyboard.hideFormAccessoryBar(false);\n    Keyboard.hideFormAccessoryBar(null, function (currentValue) { console.log(currentValue); });\n\n## Keyboard.disableScrollingInShrinkView\n\nDisable scrolling when the the WebView is shrunk.\n\n    Keyboard.disableScrollingInShrinkView(value, successCallback);\n\n#### Description\n\nSet to true to disable scrolling when the WebView is shrunk.\n\n\n#### Supported Platforms\n\n- iOS\n\n#### Quick Example\n\n    Keyboard.disableScrollingInShrinkView(true);\n    Keyboard.disableScrollingInShrinkView(false);\n    Keyboard.disableScrollingInShrinkView(null, function (currentValue) { console.log(currentValue); });\n \n## Keyboard.hide\n\nHide the keyboard\n\n    Keyboard.hide();\n\n#### Description\n\nCall this method to hide the keyboard\n\n#### Supported Platforms\n\n- iOS\n- Android\n\n#### Quick Example\n\n    Keyboard.hide();\n\n## Keyboard.show\n\nShow the keyboard\n\n    Keyboard.show();\n\n#### Description\n\nCall this method to show the keyboard.\n\n\n#### Supported Platforms\n\n- Android\n\n#### Quick Example\n\n    Keyboard.show();\n\n# Properties\n\n## Keyboard.isVisible\n\nDetermine if the keyboard is visible.\n\n    if (Keyboard.isVisible) {\n        // do something\n    }\n\n#### Description\n\nRead this property to determine if the keyboard is visible.\n\n\n#### Supported Platforms\n\n- iOS\n\n## Keyboard.automaticScrollToTopOnHiding\n\nSpecifies whenether content of page would be automatically scrolled to the top of the page\nwhen keyboard is hiding.\n\n    Keyboard.automaticScrollToTopOnHiding = true;\n\n#### Description\n\nSet this to true if you need that page scroll to beginning when keyboard is hiding.\nThis is allows to fix issue with elements declared with position: fixed,\nafter keyboard is hiding.\n\n\n#### Supported Platforms\n\n- iOS\n\n# Events\n\n## keyboardDidShow\n\nThis event is fired when keyboard fully shown.\n\n    window.addEventListener('keyboardDidShow', function () {\n        // Describe your logic which will be run each time keyboard is shown.\n    });\n\n#### Description\n\nAttach handler to this event to be able to receive notification when keyboard is shown.\n\n\n#### Supported Platforms\n\n- iOS\n\n## keyboardDidHide\n\nThis event is fired when the keyboard is fully closed.\n\n    window.addEventListener('keyboardDidHide', function () {\n        // Describe your logic which will be run each time keyboard is closed.\n    });\n\n#### Description\n\nAttach handler to this event to be able to receive notification when keyboard is closed.\n\n\n#### Supported Platforms\n\n- iOS\n\n## keyboardWillShow\n\nThis event fires before keyboard will be shown.\n\n    window.addEventListener('keyboardWillShow', function () {\n        // Describe your logic which will be run each time when keyboard is about to be shown.\n    });\n\n#### Description\n\nAttach handler to this event to be able to receive notification when keyboard is about to be shown on the screen.\n\n\n#### Supported Platforms\n\n- iOS\n\n## keyboardWillHide\n\nThis event is fired when the keyboard is fully closed.\n\n    window.addEventListener('keyboardWillHide', function () {\n        // Describe your logic which will be run each time when keyboard is about to be closed.\n    });\n\n#### Description\n\nAttach handler to this event to be able to receive notification when keyboard is about to be closed.\n\n\n#### Supported Platforms\n\n- iOS\n\n## keyboardHeightWillChange\n\nThis event is fired when the keyboard is fully closed.\n\n    window.addEventListener('keyboardHeightWillChange', function (event) {\n        // Describe your logic which will be run each time when keyboard is about to be closed.\n        console.log(event.keyboardHeight);\n    });\n\n#### Description\n\nAttach handler to this event to be able to receive notification when keyboard is about to be closed.\n\n\n#### Supported Platforms\n\n- iOS\n\n\n# Releases\n\n- 1.0.0 \n    - Initial NPM release\n    - Fix issues with external keyboards\n    - Support keyboard events on window\n    - Fix issues with split and undocked keyboards\n    - Add keyboardHeightWillChange event\n    - Fix issues with StatusBarOverlaysWebview\n- 1.1.0\n    - Add hide/show for Android\n    - Support original keyboard event mechanism\n- 1.1.1\n    - Make compatible with cordova-android 3 and 4 (See [#2](/../../issues/2))\n    - Add hide for iOS\n- 1.1.2\n    - Fix issues with hiding the accessory bar (See [#3](/../../issues/3))\n- 1.1.3\n    - Support hiding the accessory bar when using WKWebView as the engine (See [here](https://github.com/Telerik-Verified-Plugins/WKWebView/issues/85))\n- 1.1.4\n    - Fix page scrolling (See [#14](/../../issues/14))\n    - Prevent possible app store rejections (See [#21](/../../issues/21)) \n- 1.1.5\n    - Fix window.innerHeight when using WKWebView (See [#32](/../../issues/32))\n- 1.2.0\n    - Return current values of shrinkView, disableScroll and hideFormAccessoryBar in a success callback\n    - Fix scroller resizing bug (See [#55](/../../issues/55))\n    - Fix iOS 11.1.1 WKWebView ShrinksView bug (See [#64](/../../issues/64))\n\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjpearson/cordova-plugin-keyboard.git"
+  },
+  "version": "1.2.0"
+}

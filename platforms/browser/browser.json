@@ -1,0 +1,44 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-keyboard": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-spinner": {
+      "PACKAGE_NAME": "io.scmjunction.svasth"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "file": "plugins/cordova-plugin-keyboard/www/keyboard.js",
+      "id": "cordova-plugin-keyboard.keyboard",
+      "pluginId": "cordova-plugin-keyboard",
+      "clobbers": [
+        "window.Keyboard"
+      ]
+    },
+    {
+      "file": "plugins/cordova-plugin-spinner/www/spinner-plugin.js",
+      "id": "cordova-plugin-spinner.SpinnerPlugin",
+      "pluginId": "cordova-plugin-spinner",
+      "clobbers": [
+        "SpinnerPlugin"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova-plugin-keyboard": "1.2.0",
+    "cordova-plugin-spinner": "1.1.0"
+  }
+}

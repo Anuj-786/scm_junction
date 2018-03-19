@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <title>BizConnect</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link href="css/icon.css" rel="stylesheet">
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/custom-jquery.js"></script>
+    </head>
+    <body class="dashboard-page">
+        <header>
+                <nav>
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo"><img class="img-responsive" src="img/logo.png"></a>
+                        <ul id="slide-out" class="side-nav">
+                            <!-- <li><div class="user-view">
+                              <div class="background">
+                                <img src="images/office.jpg">
+                              </div>
+                              <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+                              <a href="#!name"><span class="white-text name">John Doe</span></a>
+                              <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                            </div></li>
+                            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                            <li><a href="#!">Second Link</a></li>
+                            <li><div class="divider"></div></li>
+                            <li><a class="subheader">Subheader</a></li>
+                            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li> -->
+                        </ul>
+                        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                    </div>
+                </nav>
+               
+            </header> 
+            <div class="container dashboard">
+                <div class="row">
+                    <div class="search-heading"><span>Search For Trucks</span></div>
+                    <form class="col s12">
+                            <div class="input-field col s12 col m12">
+                                <input placeholder="Enter City" class="origin-autocomplete" id="origin" type="text">
+                                <label for="origin" data-error="wrong" data-success="right">From</label>
+                            </div>
+                            <div class="input-field col s12 col m12">
+                                <input placeholder="Enter City" class="dest-autocomplete" id="destination" type="email" class="validate">
+                                <label for="destination" data-error="wrong" data-success="right">To</label>
+                            </div>
+                    </form>
+                    <div class="col s12 col m12">
+                        <a class="waves-effect waves-light btn-large center-align button col s6 offset-s3">Search</a>
+                    </div>
+                </div>
+            </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body> 
+</html>

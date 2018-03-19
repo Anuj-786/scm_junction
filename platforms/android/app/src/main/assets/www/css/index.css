@@ -1,0 +1,75 @@
+body {
+    background: #00bcd4;
+}
+.login-register {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.register form {
+    margin-top: 20px;
+}
+.app form {
+    margin-top: 10px;
+}
+.login-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+}
+.forget-register {
+    margin-top: 30px;
+}
+.app .button, .register .button {
+    border-radius: 25px;
+}
+/*css for dashboard page*/
+.dashboard-page nav, .list-trucks nav {
+    background: #00bcd4;
+}
+.dashboard-page {
+    background: #fff;
+}
+.dashboard-page .brand-logo img, .list-trucks .brand-logo img {
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 3px;
+}
+.dashboard-page .button-collapse i {
+    font-size: 40px;
+}
+.dashboard-page .search-heading {
+    text-align: center;
+    font-size: 25px;
+    color: red;
+    padding: 15px;
+}
+/*css for truck listing page*/
+
+.list-trucks {
+    background: #ffffff !important;
+}
+.list-trucks li {
+    list-style: none;
+}
+.list-trucks li .date-text {
+    text-align: center;
+    font-size: 18px;
+}
+.list-trucks li table th {
+    font-size: 12px;
+}
+.list-trucks li td {
+    font-size: 9px;
+}
+.list-trucks  .toLocation {
+    word-break: break-word;
+}
+.list-trucks .date-text {
+    background: #ffeb3b;
+    color: red;
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 5px;
+}
