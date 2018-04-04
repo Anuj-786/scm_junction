@@ -41,27 +41,75 @@
                             <img src="img/logo.png" class="img-responsive">
                             <div class="row">
                                 <form class="col s12">
-                                  <div class="row">
-                                    <div class="input-field col s6">
-                                      <input id="name" type="text">
-                                      <label for="name" data-error="wrong" data-success="right">Full Name</label>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <select id="mySelect">
+                                              <option value="" disabled selected>Select Company</option>
+                                              <option value="1">Transport Company</option>
+                                              <option value="2">Transport Owner</option>
+                                              <option value="3">Transport Agent/Consultant</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s4">
+                                          <input id="fname" type="text" required class="validate">
+                                          <label for="fname" data-error="wrong" data-success="right">First Name</label>
+                                        </div>
+                                        <div class="input-field col s4">
+                                          <input id="lname" type="text" required class="validate">
+                                          <label for="lname" data-error="wrong" data-success="right">Last Name</label>
+                                        </div>
+                                        <div class="input-field col s4">
+                                          <input id="email" type="email" required class="validate">
+                                          <label for="email" data-error="wrong" data-success="right">Email</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input id="password" type="password" required class="validate">
+                                            <label for="password">Password</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input id="cname" type="text" required class="validate">
+                                            <label for="cname">Company Name</label>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <input id="designation" type="text" required class="validate">
+                                            <label for="designation">Designation</label>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <input id="noOfTrucks" type="number" required class="validate">
+                                            <label for="noOfTrucks">Number of Trucks</label>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <input id="address" type="text" required class="validate">
+                                            <label for="address">Address</label>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <input id="area" type="text" required class="validate">
+                                            <label for="area">Area</label>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <input id="pincode" type="number" required class="validate">
+                                            <label for="pincode">Pin Code</label>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <input id="city" type="text" required class="validate">
+                                            <label for="city">City</label>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <input id="deviceId" type="text" required class="validate">
+                                            <label for="deviceId">Device Id</label>
+                                        </div>
+                                         <div class="input-field col s4">
+                                            <input id="branch" type="text" required class="validate" data-length="20">
+                                            <label for="branch">Branches</label>
+                                        </div>
+                                        <div class="input-field col s4">
+                                          <input id="phone_number" type="number" class="validate" data-length="10">
+                                          <label for="email" data-error="wrong" data-success="right">Mobile</label>
+                                        </div>
                                     </div>
-                                    <div class="input-field col s6">
-                                      <input id="email" type="email" class="validate">
-                                      <label for="email" data-error="wrong" data-success="right">Email</label>
-                                    </div>
-                                    <div class="input-field col s6">
-                                      <input id="phone_number" type="number" class="validate">
-                                      <label for="email" data-error="wrong" data-success="right">Phone Number</label>
-                                    </div>
-                                    <div class="input-field col s6">
-                                        <input id="password" type="password" class="validate">
-                                        <label for="password">Password</label>
-                                      </div>
-                                  </div>
                                 </form>
                                 <div class="col s12 col m12">
-                                    <a class="waves-effect waves-light btn-large center-align button col s6 offset-s3">Register</a>
+                                    <a class="waves-effect waves-light btn-large center-align button col s6 offset-s3" onclick="app.RegisterUser()">Register</a>
                                 </div>
                             </div>
                         </div>

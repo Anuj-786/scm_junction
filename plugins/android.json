@@ -15,6 +15,12 @@
     },
     "cordova-plugin-spinner": {
       "PACKAGE_NAME": "io.scmjunction.svasth"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "io.scmjunction.svasth"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.scmjunction.svasth"
     }
   },
   "dependent_plugins": {}

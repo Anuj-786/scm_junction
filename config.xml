@@ -25,5 +25,7 @@
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="cordova-plugin-keyboard" spec="^1.2.0" />
     <plugin name="cordova-plugin-spinner" spec="^1.1.0" />
+    <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
+    <plugin name="cordova-plugin-device" spec="cordova-plugin-device" />
     <engine name="android" spec="^7.0.0" />
 </widget>
